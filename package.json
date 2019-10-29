@@ -1,0 +1,11 @@
+{
+  "name": "static-comments-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/iureguimaraes/static-comments-react.git",
+  "author": "Iure Guimarães <iurevguimaraes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.6.4"
+  }
+}
