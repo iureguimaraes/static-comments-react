@@ -6,6 +6,7 @@ const Header = () => {
     <header>
       <nav>
         <img src="https://i.imgur.com/KDIDiSE.png" alt="facebook"/>
+        
         <div>
           <span>Meu perfil</span>
           <i className="material-icons">account_circle</i>          
