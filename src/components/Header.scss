@@ -1,0 +1,28 @@
+header {
+  background-color: #4A90E2;
+  display: flex;
+  justify-content: center;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 42px;
+    color: white;
+    min-width: 980px;
+    font-size: 14px;
+    & > div {
+      display: flex;
+      align-items:  center;
+    }
+    img {
+      height: 24px;
+    }
+    & > div span {
+      font: bold 15px Helvetica, sans-serif;
+    }
+    & > div i {
+      margin-left: 8px;
+    }
+  }
+}
