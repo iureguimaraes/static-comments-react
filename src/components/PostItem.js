@@ -14,21 +14,28 @@ const PostHeader = ({author, date}) => {
   )
 };
 
-const PostComments = () => {
+const PostComments = ({comments}) => {
   return (
     <div className="post-comments">
-      <h3>Comments</h3>
+      {comments.map(comment => (
+        <div key={comment.id} className="comment">
+          <img src={comment.author.avatar} alt={comment.author.name} />
+          <p>
+            <strong>{comment.author.name}</strong>
+            {comment.content}
+          </p>
+        </div>
+      ))}
     </div>
   )
 }
 
-const PostItem = ({author, date, content}) => {
+const PostItem = ({author, date, content, comments}) => {
   return (
     <div className="post">
-      {console.log(author, date)}
       <PostHeader author={author} date={date}/>
       <p className="post-content">{content}</p>
-      <PostComments />
+      <PostComments comments={ comments } />
     </div>
   );
 };

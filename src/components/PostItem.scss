@@ -2,7 +2,7 @@
   background-color: white;
   margin: 20px 0 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 20px;
   .post-header {
     display: flex;
@@ -29,6 +29,7 @@
 
   .post-content {
     color: #3E3E3E;
+    font-size: 14px;
     line-height: 22px;
   }
 
@@ -36,5 +37,28 @@
     border-top: 1px solid #EEE;
     margin: 20px 0 0;
     padding: 20px 0 0;
+    .comment{
+      display: flex;
+      margin-bottom: 10px;
+      img {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        min-height: 28px;
+        border-radius: 50%;
+      }
+      p {
+        background-color: #EEE;
+        border-radius: 20px;
+        padding: 15px;
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        strong {
+          font-weight: bold;
+          margin-right: 5px;
+        }
+      }
+    }
   }
 }
